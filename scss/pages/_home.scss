@@ -313,10 +313,9 @@
 }
 [data-netlify-recaptcha="true"] {
   margin-inline: auto;
-  // transform: scale(0.75);
-  // transform-origin: center top;
-  // @include flex();
-  // width: 100%;
+  transform: scale(0.75);
+  transform-origin: center top;
+  width: 100%;
 
   // & > div,
   // & iframe {
