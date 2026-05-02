@@ -1,0 +1,18 @@
+@use "../abstracts/index" as *;
+
+.bg {
+  &-main {
+    background-color: $main-color;
+    color: $dark-color;
+  }
+
+  &-light {
+    background-color: $white-color;
+    color: $dark-color;
+  }
+
+  &-dark {
+    background-color: $dark-color;
+    color: $white-color;
+  }
+}

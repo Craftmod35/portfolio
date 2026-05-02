@@ -1,0 +1,76 @@
+@use "../abstracts/index.scss" as *;
+
+.main-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+  display: none;
+  @include respond-to(tablet) {
+    display: block;
+  }
+}
+
+.nav-container {
+  @include flex(space-between, center, row wrap);
+  width: 85%;
+  max-width: 1650px;
+  padding-block-start: 1rem;
+  position: relative;
+  z-index: 2;
+
+  padding-inline: clamp(1.2rem, 4vw, 1.5rem);
+  margin-inline: auto;
+  overflow: hidden;
+
+  @include respond-to(tablet) {
+    padding-block-start: 1.8rem;
+  }
+  @include respond-to(laptop) {
+    width: 90%;
+  }
+}
+
+.nav-list {
+  @include flex($justify: space-evenly, $flow: row wrap);
+  gap: clamp(0.6rem, 4vw, 1.2rem);
+  margin-inline: auto;
+
+  @include respond-to(laptop) {
+    margin-inline-start: auto;
+    margin-inline-end: 0;
+  }
+
+  li {
+    padding-block: clamp(0.4rem, 2vw, 0.8rem);
+    padding-inline: clamp(0.8rem, 3vw, 1.5rem);
+  }
+}
+
+.nav-link {
+  color: $white-color;
+  padding-block-end: 0.5rem;
+  border-bottom: 3px transparent solid;
+  text-transform: uppercase;
+  transition: border-color 0.5s;
+
+  font-size: clamp(1rem, 3vw, 1.2rem);
+
+  &:hover {
+    border-color: $gray-color;
+  }
+}
+
+.main-logo {
+  width: 4rem;
+  height: auto;
+  margin-inline-start: 2rem;
+
+  display: none;
+
+  @include respond-to(laptop) {
+    display: inline-block;
+  }
+}

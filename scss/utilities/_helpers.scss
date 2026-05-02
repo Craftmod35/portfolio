@@ -1,0 +1,33 @@
+@use "../abstracts/index" as *;
+
+.bottom-line {
+  height: 2.5px;
+  background-color: $main-color;
+  margin-inline: auto;
+  margin-block-end: 1.8rem;
+  margin-block-start: 0;
+  display: block;
+  width: 6.5rem;
+
+  @include respond-to(tablet) {
+    margin-inline: auto;
+    margin-block-end: 1.2rem;
+    margin-block-start: 0;
+  }
+}
+
+.container {
+  width: $website-width;
+  max-width: 1540px;
+  padding-block: 0;
+  padding-inline: 1.5rem;
+  margin: auto;
+  overflow: hidden;
+
+  @include respond-to(mobile-l) {
+    width: 90%;
+  }
+  @include respond-to(tablet) {
+    width: 85%;
+  }
+}

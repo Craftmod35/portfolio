@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as *;
+
+@for $i from 1 through 5 {
+  .py-#{$i} {
+    padding-block: #{$i}rem !important;
+  }
+  .my-#{$i} {
+    margin-block: #{$i}rem !important;
+  }
+  .px-#{$i} {
+    padding-inline: #{$i}rem !important;
+  }
+  .mx-#{$i} {
+    margin-inline: #{$i}rem !important;
+  }
+}

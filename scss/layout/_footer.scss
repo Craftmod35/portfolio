@@ -1,0 +1,80 @@
+@use "../abstracts/index" as *;
+
+.main-footer {
+  padding-block-start: clamp(1rem, 3vh, 2rem);
+  padding-block-end: clamp(0.8rem, 3vh, 1.2rem);
+  padding-inline: 0;
+  border-top: 3px solid $main-color;
+  color: $white-color;
+  background-color: $black-color;
+}
+
+.footer__container {
+  width: $website-width;
+  max-width: 1540px;
+  padding-block: 0;
+  padding-inline: 1.5rem;
+  margin: auto;
+  // overflow: hidden;
+  @include flex(center, center, column nowrap);
+  height: auto;
+  row-gap: clamp(1.5rem, 3vh, 2rem);
+  // min-height: 4rem;
+
+  p {
+    font-size: clamp(1.2rem, 2vw, 1.7rem);
+    font-weight: 450;
+
+    @include respond-to(mobile-m) {
+      font-size: clamp(1.4rem, 3vw, 2rem);
+    }
+    @include respond-to(mobile-l) {
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+    }
+  }
+
+  @include respond-to(mobile-l) {
+    width: 90%;
+  }
+  @include respond-to(tablet) {
+    @include flex(center, center, row nowrap);
+    column-gap: clamp(1.5rem, 3vw, 4rem);
+  }
+
+  @include respond-to(laptop-l) {
+    width: 85%;
+    @include flex(space-evenly, center, row nowrap);
+  }
+}
+
+.footer__socials {
+  @include flex(center, center, row nowrap);
+  gap: clamp(1.8rem, 2vw, 2.2rem);
+  height: auto;
+}
+
+.footer__link {
+  @include flex(center, center, column nowrap);
+  height: 4rem;
+  width: 3rem;
+}
+
+.footer__icon {
+  color: $white-color;
+  font-size: clamp(1.6rem, 4vw, 2.5rem);
+  padding: 0.2rem;
+  letter-spacing: normal;
+  display: block;
+  text-align: center;
+  width: auto;
+
+  @include respond-to(mobile) {
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+
+  @extend %transition-all-cubic;
+  &:hover {
+    transform: translateY(-5px);
+    // font-size: 2.6rem;
+  }
+}

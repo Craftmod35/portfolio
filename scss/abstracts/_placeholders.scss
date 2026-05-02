@@ -1,0 +1,20 @@
+@use "_variables" as *;
+@use "_mixins" as *;
+%transition-all-cubic {
+  transition: all 0.2s $cubic;
+}
+
+%btn-base {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+%general--lead {
+  font-size: 1.4rem;
+  margin-block-end: 2rem;
+}

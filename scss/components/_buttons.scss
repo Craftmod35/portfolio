@@ -1,0 +1,12 @@
+@use "../abstracts/index.scss" as *;
+
+.btn-light {
+  @extend %btn-base;
+  @include btn-color($white-color);
+  @include btn-hover($main-color);
+}
+.btn-primary {
+  @extend %btn-base;
+  @include btn-color($main-color);
+  @include btn-hover($black-color);
+}

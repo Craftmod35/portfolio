@@ -1,0 +1,9 @@
+@use "../abstracts/index.scss" as *;
+
+.lead {
+  @extend %general--lead;
+}
+
+.text-center {
+  text-align: center;
+}

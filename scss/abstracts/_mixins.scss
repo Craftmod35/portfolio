@@ -1,0 +1,51 @@
+@use "functions" as *;
+@use "maps" as *;
+@use "sass:map";
+
+// Media
+
+@mixin respond-to($msize) {
+  $size: map.get($breakpoints, $msize);
+  @if $size != null {
+    @media (min-width: $size) {
+      @content;
+    }
+  }
+}
+
+// FlexBox
+@mixin flex($justify: center, $align: center, $flow: null) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+
+  @if $flow != null {
+    flex-flow: $flow;
+  }
+}
+
+//Buttons
+
+@mixin btn-color($bg) {
+  background-color: $bg;
+  color: text-color($bg);
+}
+
+@mixin btn-hover($bg: $main-color, $custom-color: null) {
+  &:hover {
+    background-color: $bg;
+    @if $custom-color {
+      color: $custom-color;
+    } @else {
+      color: text-color($bg);
+    }
+  }
+}
+
+// Transitions
+
+// @mixin shadow-hover($dist) {
+//   box-shadow: $dist * 1px $dist * 2 * 1px $dist * 3 * 1px;
+// }
+
+//Other Files

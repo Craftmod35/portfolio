@@ -1,0 +1,49 @@
+@use "../abstracts/index" as *;
+
+//Component
+.section-title {
+  text-transform: uppercase;
+  font-size: clamp(1.6rem, 4vw, 2.3rem);
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+
+.progress__bar {
+  height: clamp(1rem, 1.2vw, 1.8rem);
+  background-color: $gray-color;
+  border-radius: 5px;
+  // overflow: hidden;
+  width: 100%;
+
+  position: relative;
+
+  .progress__fill {
+    height: 100%;
+    background-color: $main-color;
+    border-radius: inherit;
+    // padding-inline-start: 1rem;
+    // padding-inline-end: 0.5rem;
+    // overflow: hidden;
+    // white-space: nowrap;
+
+    @include flex(flex-end, center, row nowrap);
+
+    @each $name, $per in $skills {
+      &--#{$name} {
+        width: $per;
+      }
+    }
+  }
+}
+
+.progress__value {
+  font-size: clamp(1.2rem, 3vw, 1.4rem);
+
+  color: $white-color;
+  font-weight: 500;
+  // text-overflow: ellipsis;
+  // overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: clamp(-2rem, 1.2vw, -2.3rem);
+}

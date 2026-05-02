@@ -1,0 +1,21 @@
+@use "variables";
+
+@use "sass:map";
+
+$breakpoints: (
+  mobile-s: 320px,
+  mobile-m: 375px,
+  mobile-l: 425px,
+  tablet: 768px,
+  laptop: 1024px,
+  laptop-l: 1440px,
+  4K: 2560px,
+);
+
+$skills: (
+  "html": 90%,
+  "css": 80%,
+  "git": 20%,
+  "js": 0%,
+  "react": 0%,
+);

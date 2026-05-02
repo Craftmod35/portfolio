@@ -1,62 +1,11 @@
-@use "config" as *;
-@use "utilities";
-@use "base";
-@use "media";
+@use "abstracts/index" as *;
 
-@use "sass:color";
+@use "base/index" as *;
 
-@media (min-width: 1251px) {
-  $star-colors: (#9c27b0, #2196f3, #03a9f4, #673ab7, $main-color);
+@use "layout/index" as *;
 
-  #header-home {
-    position: relative;
-    overflow: hidden;
+@use "utilities/index" as *;
 
-    .star {
-      position: absolute;
-      top: -100px;
-      left: 100%;
-      height: 6px;
-      border-radius: 999px;
-      transform: rotate(135deg);
-      opacity: 0;
+@use "components/index" as *;
 
-      @for $i from 1 through 20 {
-        &:nth-child(#{$i}) {
-          $current-color: nth($star-colors, random(length($star-colors)));
-          $width: random(150) + 100 + px;
-          width: $width;
-
-          // الديل: الشفاف جهة الشمال واللون (الرأس) جهة اليمين
-          background: linear-gradient(90deg, transparent, $current-color);
-          filter: drop-shadow(0 0 14px $current-color);
-
-          // توزيع عشوائي للبدايات
-          top: random(100) * 1% - 20%;
-          left: random(100) * 1% + 20%;
-          animation: shooting
-            #{(random(3) + 2) +
-            s}
-            linear
-            infinite
-            #{random(10) +
-            s};
-        }
-      }
-    }
-  }
-
-  @keyframes shooting {
-    0% {
-      transform: rotate(135deg) translateX(0);
-      opacity: 0;
-    }
-    10% {
-      opacity: 1;
-    }
-    100% {
-      transform: rotate(135deg) translateX(2000px);
-      opacity: 0;
-    }
-  }
-}
+@use "pages/index" as *;
