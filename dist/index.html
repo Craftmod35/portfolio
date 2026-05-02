@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>Skeleton</title>
+  </head>
+  <body>
+    <header id="header-home" class="header--home text-center">
+      <nav class="main-nav">
+        <div class="nav-container">
+          <img src="imgs/logo3.png" class="main-logo" alt="Logo icon" />
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#header-home">Home</a></li>
+            <li><a class="nav-link" href="#about-me">About</a></li>
+            <li><a class="nav-link" href="#technical">Skills</a></li>
+            <li><a class="nav-link" href="#my-work">Projects</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="header__content text-center">
+          <div class="header__text">
+            <h1 class="header__presenting">I'm Omar the Developer</h1>
+            <p class="header__lead">I specialize in Front-end</p>
+          </div>
+          <a href="#my-work" class="btn-light header__button">My Works</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="about-me" class="about-me text-center py-2">
+      <div class="container">
+        <h1 class="section-title">About Me</h1>
+        <div class="bottom-line"></div>
+        <p class="lead">
+          Let me tell you a little about myself and what I do...
+        </p>
+        <div class="about__bio">
+          <a
+            href="/dist/imgs/myphoto.jpg "
+            target="_blank"
+            alt="Dammit it Got Deleted!"
+            class="bio--img__link"
+          >
+            <img
+              src="imgs/myphotoresized2.jpg"
+              alt="Omar - Frontend Developer"
+              class="bio__img"
+            />
+          </a>
+          <div class="about__bio__info bg-light text-center">
+            <h4 class="about__bio__h4">Your Project Is In Safe Hands</h4>
+            <p class="about__bio__p">
+              I am Omar, a 20-year-old Computer Science student and Front-End
+              Developer who enjoys building clean, structured web interfaces. I
+              focus on understanding how things work — from HTML, CSS, Git, and
+              the CLI to writing scalable front-end code. I care about learning
+              deeply, not just writing code that works. I enjoy breaking down
+              complex problems and paying attention to the small details that
+              improve user experience.
+            </p>
+          </div>
+
+          <div class="about__awards award-1">
+            <i class="fas fa-solid fa-lightbulb fa-3x"></i>
+            <h3>Deep learner</h3>
+            <p>
+              I don't just write code; I strive to understand the "why" and
+              "how" behind every technology I use, ensuring a solid foundation
+            </p>
+          </div>
+          <div class="about__awards award-2">
+            <i class="fas fa-solid fa-microscope fa-3x"></i>
+            <h3>Attention To details</h3>
+            <p>
+              I focus on the small details that make a big difference, ensuring
+              pixel-perfect designs and smooth user experiences.
+            </p>
+          </div>
+          <div class="about__awards award-3">
+            <i class="fas fa-solid fa-gears fa-3x"></i>
+            <h3>Logical thinker</h3>
+            <p>
+              I enjoy breaking down complex problems into manageable steps and
+              building efficient, scalable logic for every project.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="technical" class="skills py-3 bg-dark">
+      <div class="container">
+        <h4 class="section-title text-center">Technical skills</h4>
+        <div class="bottom-line"></div>
+        <div class="skills__units">
+          <div class="skills__html">
+            <h4>HTML5 :</h4>
+            <div class="progress__bar">
+              <div class="progress__fill progress__fill--html">
+                <span class="progress__value">90%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__css">
+            <h4>CSS3 :</h4>
+            <div class="progress__bar">
+              <div class="progress__fill progress__fill--css">
+                <span class="progress__value">80%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__git">
+            <h4>Git:</h4>
+            <div class="progress__bar">
+              <div class="progress__fill progress__fill--git">
+                <span class="progress__value">20%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__js">
+            <h4>Javascript :</h4>
+            <div class="progress__bar">
+              <div class="progress__fill progress__fill--js">
+                <span class="progress__value">0</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__react">
+            <h4>React :</h4>
+            <div class="progress__bar">
+              <div class="progress__fill progress__fill--react">
+                <span class="progress__value"> 0 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="my-work" class="works py-3">
+      <div class="container">
+        <h1 class="section-title text-center">My Works</h1>
+        <div class="bottom-line"></div>
+        <div class="work__cards">
+          <div class="work__card">
+            <div class="img__wrap">
+              <a
+                class="img__wrap--link"
+                href="imgs/Screenshot (326).png"
+                target="_blank"
+                ><img
+                  src="imgs/Screenshot (326).png"
+                  alt="Portfolio Website screenshot"
+              /></a>
+            </div>
+            <h3 class="card__address">Portfolio Website</h3>
+            <p class="card__lead">
+              This is the first Experimental Portfolio Website I made , I follow
+              Traversy Media to make it tbh, And I often take some ideas from it
+              to make my projects better looking.
+            </p>
+            <a
+              href="https://fallens-first-project.netlify.app/"
+              target="_blank"
+              class="card__btn"
+              >View</a
+            >
+          </div>
+
+          <div class="work__card">
+            <div class="img__wrap card__skeleton">
+              <a class="img__wrap--link" href=""
+                ><img src="" alt="" />
+                <span class="coming">coming soon</span></a
+              >
+            </div>
+            <h3 class="card__address">In Development</h3>
+            <p class="card__lead">Description.</p>
+            <a href="" class="card__btn">View</a>
+          </div>
+          <div class="work__card">
+            <div class="img__wrap card__skeleton">
+              <a class="img__wrap--link" href=""
+                ><img src="" alt="" /><span class="coming">coming soon</span></a
+              >
+            </div>
+            <h3 class="card__address">In Development</h3>
+            <p class="card__lead">Description.</p>
+            <a href="" class="card__btn">View</a>
+          </div>
+          <div class="work__card">
+            <div class="img__wrap card__skeleton">
+              <a class="img__wrap--link" href=""
+                ><img src="imgs/Scrreenshott (326).png" alt="" /><span
+                  class="coming"
+                  >coming soon</span
+                ></a
+              >
+            </div>
+            <h3 class="card__address">In Development</h3>
+            <p class="card__lead">Description.</p>
+            <a href="" class="card__btn">View</a>
+          </div>
+          <div class="work__card">
+            <div class="img__wrap card__skeleton">
+              <a class="img__wrap--link" href=""
+                ><img src="imgs/Scrreenshott (326).png" alt="" /><span
+                  class="coming"
+                  >coming soon</span
+                ></a
+              >
+            </div>
+            <h3 class="card__address">In Development</h3>
+            <p class="card__lead">Description.</p>
+            <a href="" class="card__btn">View</a>
+          </div>
+          <div class="work__card">
+            <div class="img__wrap card__skeleton">
+              <a class="img__wrap--link" href=""
+                ><img src="imgs/Scrreenshott (326).png" alt="" /><span
+                  class="coming"
+                  >coming soon</span
+                ></a
+              >
+            </div>
+            <h3 class="card__address">In Development</h3>
+            <p class="card__lead">Description.</p>
+            <a href="" class="card__btn">View</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact py-3 my-3">
+      <div class="container">
+        <h3 class="section-title text-center">Contact</h3>
+        <div class="bottom-line"></div>
+        <p class="lead text-center">If you want to send a message...</p>
+
+        <form
+          method="POST"
+          name="contact"
+          class="contact__form"
+          data-netlify="true"
+          data-netlify-recaptcha="true"
+          netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="contact" required />
+          <div class="text__fields">
+            <div class="text__field input__name">
+              <label class="input__label" for="name">Name :</label
+              ><input
+                type="text"
+                id="name"
+                class="input__field"
+                name="Name"
+                placeholder="Name"
+              />
+            </div>
+
+            <div class="text__field input__email">
+              <label class="input__label" for="email">Email :</label
+              ><input
+                type="email"
+                class="input__field"
+                name="Email"
+                id="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+
+            <div class="text__field input__subject">
+              <label class="input__label" for="subject">Subject :</label
+              ><input
+                type="text"
+                class="input__field"
+                name="Subject"
+                id="subject"
+                placeholder="Subject"
+              />
+            </div>
+
+            <div class="text__field input__message">
+              <label for="message" class="input__label">Message :</label>
+              <textarea
+                name="Message"
+                id="message"
+                class="input__field input__field--message"
+                placeholder="Describe your message here..."
+                required
+              ></textarea>
+            </div>
+          </div>
+          <div data-netlify-recaptcha="true" class="my-2 mx-auto"></div>
+          <input class="honey-bot" name="bot-field" type="text" />
+          <button type="submit" class="btn__contact btn-primary" name="submit">
+            Send
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="footer__container">
+        <p>Stay Connected with the Journey...</p>
+
+        <div class="footer__socials">
+          <a
+            href="https://github.com/Craftmod35"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer__link"
+            title="Follow me on Github"
+            ><i class="fab fa-github fa-fw footer__icon"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/omar-ebeed-3ba874388 "
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer__link"
+            title="Follow me on Linkedin"
+            ><i class="fab fa-linkedin fa-fw footer__icon"></i
+          ></a>
+          <a
+            href="https://discord.com/users/415581211377926154"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer__link"
+            title="Chat with me on Discord"
+            ><i class="fab fa-discord fa-fw footer__icon"></i
+          ></a>
+          <a
+            href="#contact"
+            rel="noopener noreferrer"
+            class="footer__link"
+            title="Send me an Email"
+            ><i class="fas fa-envelope fa-fw footer__icon"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
