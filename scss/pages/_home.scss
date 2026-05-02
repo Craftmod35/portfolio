@@ -313,7 +313,7 @@
 }
 [data-netlify-recaptcha="true"] {
   margin-inline: auto;
-  transform: scale(0.75);
+  transform: scale(0.4);
   transform-origin: center top;
   width: 100%;
 
@@ -324,15 +324,19 @@
   //   transform: scale(0.7);
   //   transform-origin: center top;
 
-  //   @include respond-to(mobile) {
-  //     transform: scale(0.8);
-  //     transform-origin: center top;
-  //   }
-  //   @include respond-to(mobile-l) {
-  //     transform: scale(1);
-  //     transform-origin: center top;
-  //   }
   // }
+  @include respond-to(mobile) {
+    transform: scale(0.6);
+    transform-origin: center top;
+  }
+  @include respond-to(mobile-l) {
+    transform: scale(0.8);
+    transform-origin: center top;
+  }
+  @include respond-to(tablet) {
+    transform: scale(1);
+    transform-origin: center top;
+  }
 }
 
 .text__fields {
