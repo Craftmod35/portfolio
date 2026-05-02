@@ -845,6 +845,17 @@ h6 {
   max-width: 1100px;
 }
 
+.captcha-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.g-recaptcha {
+  transform: scale(0.75);
+  transform-origin: center top;
+}
+
 .text__fields {
   display: grid;
   width: 100%;

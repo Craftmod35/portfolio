@@ -311,9 +311,10 @@
 .captcha-wrapper {
   @include flex();
 }
-.g-recaptcha {
-  transform: scale(0.75);
-  transform-origin: center top;
+[data-netlify-recaptcha="true"] {
+  margin-inline: auto;
+  // transform: scale(0.75);
+  // transform-origin: center top;
   // @include flex();
   // width: 100%;
 
